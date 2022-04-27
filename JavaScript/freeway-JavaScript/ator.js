@@ -1,4 +1,5 @@
 // Variáveis do ator
+let hit = false;
 let xAtor = 277;
 let yAtor = 366;
 
@@ -13,4 +14,17 @@ function movimentaAtor() {
   else if (keyIsDown(DOWN_ARROW)) {
     yAtor += 4;
   }
+}
+
+function verificaColisao() {
+  for (let i = 0; i < carros.length; i++) {
+    hit = collideRectCircle(xCarros[i], yCarros[i], larguraCarro, comprimentoCarro, xAtor, yAtor, 15);
+    if (hit) {
+      colidiu();
+    }
+  }
+}
+
+function colidiu() {
+  yAtor = 366;
 }
