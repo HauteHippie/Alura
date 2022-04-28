@@ -1,7 +1,9 @@
 // Variáveis do carro
-let yCarros = [42, 98, 150];
-let xCarros = [600, 600, 600];
-let velocidadeCarros = [2, 3.5, 4];
+let yCarros = [42, 98, 150, 215, 265, 320];
+let xCarros = [600, 600, 600, 600, 600, 600];
+let velocidadeCarros = [2, 3.5, 4, 3.1, 1, 5];
+let larguraCarro = 66;
+let comprimentoCarro = 36;
 
 function mostraCarro() {
   for (let i = 0; i < carros.length; i++) {
