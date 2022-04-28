@@ -1,7 +1,8 @@
 // Variáveis do ator
-let hit = false;
 let xAtor = 277;
 let yAtor = 366;
+
+let pontos = 0;
 
 function mostraAtor() {
   image(imagemAtor, xAtor, yAtor, 45, 33);
@@ -16,15 +17,16 @@ function movimentaAtor() {
   }
 }
 
-function verificaColisao() {
-  for (let i = 0; i < carros.length; i++) {
-    hit = collideRectCircle(xCarros[i], yCarros[i], larguraCarro, comprimentoCarro, xAtor, yAtor, 15);
-    if (hit) {
-      colidiu();
-    }
-  }
+function incluiPontos(){
+  textSize(25);
+  fill(255, 240, 60);
+  textAlign(CENTER);
+  text(pontos, width / 5, 27)
 }
 
-function colidiu() {
-  yAtor = 366;
+function marcaPontos() {
+  if (yAtor < 30) {
+    pontos++;   
+    yAtor = 366;
+  }
 }
