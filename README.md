@@ -1,2 +1,2 @@
-# P-rojeto aMura LoLoLoLoLoL
+# Projeto aMura LoLoLoLoLoL
 #ed-tech
