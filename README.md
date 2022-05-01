@@ -1,2 +1,2 @@
-# Projeto Mura LoLoLoL
+# Projeto Mura LoLoLo
 #ed-tech
